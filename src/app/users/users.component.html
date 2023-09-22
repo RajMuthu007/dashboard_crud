@@ -1,0 +1,9 @@
+<!-- <p>users works!</p> -->
+<br>
+&nbsp;
+<button type="button" class="btn btn-warning" routerLink="['users', 'add']">ADD NEW USER</button>
+<br>
+<div *ngFor="let user of appService.users" class="mb-2">
+	&nbsp;<div >Name: {{user.name}}</div>
+	&nbsp;<div>Address: {{user.address}} &nbsp; <button type="button" class="btn btn-info" routerLink="/users/{{user.id}}">Update</button> </div>
+</div>

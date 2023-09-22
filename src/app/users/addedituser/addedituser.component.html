@@ -1,0 +1,9 @@
+<div class="mb-2">
+    Name: <input [(ngModel)]="user.name"/>
+</div>
+<div class="mb-2">
+    Address: <input [(ngModel)]="user.address"/>
+</div>
+<button class="btn btn-success" (click)="onSave()">Save</button>&nbsp;
+<button class="btn btn-dark" (click)="onCancel()">Cancel</button>&nbsp;
+<button *ngIf="user.id > 0" class="btn btn-danger" (click)="onDelete()">delete</button>
